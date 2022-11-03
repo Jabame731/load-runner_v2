@@ -1,7 +1,7 @@
 <?php include("header/header.php"); ?>
 <?php include("sidebars/sidebar-menu.php") ?>
 
-<div class="bg-gray-300 w-[1300px] h-[1000px] ml-[5px] mt-[5px]">
+<div class="bg-gray-300 w-[1300px] h-[648px] ml-[5px] mt-[5px]">
     <div class="ml-[50px] mt-[100px]">
         <div class="text-[50px]">
         <h1>Payment Details</h1>
@@ -52,12 +52,15 @@
         </div>
 
         <div class="mt-[50px] flex justify-evenly items-center">
-        <button
-            class="p-2 w-[100px] rounded-md bg-white"
-            onclick="showToast()"
-        >
-            Continue
-        </button>
+        
+            <a href="invoice.php">
+                <button
+                    class="p-2 w-[100px] rounded-md bg-white"
+                    onclick="showToast()"
+                >
+                    Continue
+                </button>
+            </a>
         </div>
     </div>
 </div>

@@ -2,7 +2,6 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  overflow: hidden;
 }
 
 .color {
@@ -15,4 +14,12 @@ body {
 
 .height-text {
   line-height: 30px;
+}
+
+.bold-text {
+  font-weight: 800;
+}
+
+.user:first-letter {
+  text-transform: capitalize;
 }

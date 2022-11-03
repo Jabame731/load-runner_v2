@@ -14,7 +14,7 @@
     />
 </head>
 <body>
-    <div class="color w-100 h-[100px] flex justify-items-center items-center">
+    <div class="color w-100 h-[100px] flex justify-items-center items-center overflow-y-visible">
       <img
         src="assests/hp.png"
         alt="hp-load-runner"
