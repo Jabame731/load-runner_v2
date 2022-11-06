@@ -13,6 +13,7 @@
             <div class="w-[1000px] items-center mt-[10px]">
                 <div class=" w-full">
                     <div class="shadow overflow-hidden rounded border-b border-gray-200">
+                        <form action="" method="post">
                         <table class="min-w-full bg-white">
                             <thead class="bg-gray-800 text-white">
                                 <tr>
@@ -93,6 +94,7 @@
                                 </tr>                        
                             </tbody>
                         </table>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -105,6 +107,7 @@
             <div class="w-[1000px] items-center mt-[10px]">
                 <div class=" w-full">
                     <div class="shadow overflow-hidden rounded border-b border-gray-200">
+                        <form action="" method="post">
                         <table class="min-w-full bg-white">
                             <thead class="bg-gray-800 text-white">
                                 <tr>
@@ -185,6 +188,7 @@
                                 </tr>                        
                             </tbody>
                         </table>
+                        </form>
                     </div>
                 </div>
             </div>
