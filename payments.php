@@ -2,7 +2,7 @@
 <?php include("sidebars/sidebar-menu.php") ?>
 
 <div class="bg-gray-300 w-[1300px] h-[648px] ml-[5px] mt-[5px]">
-    <form action="" method="post">
+    
     <div class="ml-[50px] mt-[100px]">
         <div class="text-[50px]">
         <h1>Payment Details</h1>

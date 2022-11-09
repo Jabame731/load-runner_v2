@@ -2,7 +2,7 @@
 <?php include("sidebars/sidebar-menu.php"); ?>
 
 
-<?php session_start(); 
+<?php 
 
   if(isset($_SESSION['id']) && isset($_SESSION['username'])) { ?>
 
