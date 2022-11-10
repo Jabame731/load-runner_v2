@@ -1,6 +1,26 @@
 <?php include("header/header.php"); ?>
 <?php include("sidebars/sidebar-menu.php") ?>
 
+<?php include_once('db/db_conn.php') ?>
+
+<?php 
+
+$query = "SELECT * FROM `flight_users` ORDER BY `flight_users`.`id` DESC";
+
+$result = mysqli_query($conn, $query);
+
+$row = mysqli_fetch_assoc($result);
+
+
+$getTime = date_default_timezone_set ('Asia/Singapore');
+
+
+
+?>
+
+
+
+
 <div class="bg-gray-300 w-[1300px] h-[648px] ml-[5px] text-color-all">
     <div class="ml-[50px] mt-[20px]">
         <div class="text-[40px] text-bold">
@@ -11,15 +31,23 @@
         </div>
         <div class=" mt-[50px] w-[1000px]">
             <div class="flex bg-blue-100 justify-between">
-                <span class="ml-[200px]">JojoBean's Flight Invoice</span>
-                <span>Wed Jul 16 10:41:34pm</span>
+                <span class="ml-[200px]">
+                    <?php echo $_SESSION['username'] ?>'s Flight Invoice
+                </span>
+                <span>
+                    <?php
+                        echo date("l") ." ". date("Y/m/d"). " " . date("H:i:s: a") ?>
+                </span>
             </div>
             <div class="flex justify-between mt-[15px]">
                 <span>Flight Reservartion Requests : </span>
                 <span class="mr-[25px]">Cost</span>
             </div>
             <div class="flex justify-between mt-[15px]">
-                <span>1. A Coach Class ticket from Seatlle to Sydney. </span>
+                <span>
+                    1. A <?php echo $row['type_of_seat'] ?> ticket from <?php echo $row['departure_city'] ?> to 
+                    <?php echo $row['arrival_date'] ?>
+                </span>
                 <span class="mr-[25px]">$1602</span>
             </div>
 
