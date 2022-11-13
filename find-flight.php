@@ -49,19 +49,19 @@ $row = mysqli_fetch_assoc($result)
                                 <tr>
                                     <td class="w-1/3 text-left py-3 px-4">
                                         <div>
-                                            <label><input type="radio" value="Blue_Sky_Air_800" name="blue-sky" id="blue-sky-780">  Blue Sky Air 780</label>
+                                            <label><input type="radio" value="Blue Sky Air 800" name="blue-sky" id="blue-sky-780">  Blue Sky Air 780</label>
                                         </div>
                                     </td>
                                     <td class="w-1/3 text-left py-3 px-4">
                                         <div>
                                             <!-- <label for="blue-sky-780">8am</label> -->
-                                            <input type="hidden" name="blue-sky" value="8am">8am
+                                            <input type="hidden" name="blue-sky-time" value="8am">8am
                                         </div>
                                     </td>
                                     <td class="text-left py-3 px-4">
                                         <div>
                                             <!-- <label for="blue-sky-780">$ 801</label> -->
-                                            <input type="hidden" name="blue-sky" value="801">$ 801
+                                            <input type="hidden" name="blue-sky-cost" value="801">$ 801
                                         </div>
                                     </td>
                                   
@@ -69,58 +69,58 @@ $row = mysqli_fetch_assoc($result)
                                 <tr class="bg-gray-100">
                                     <td class="w-1/3 text-left py-3 px-4">
                                         <div>
-                                            <label><input type="radio" name="blue-sky" value="Blue_Sky_Air_781" id="blue-sky-781">  Blue Sky Air 781</label>
+                                            <label><input type="radio" name="blue-sky" value="Blue Sky Air 781" id="blue-sky-781">  Blue Sky Air 781</label>
                                         </div>
                                     </td>
                                     <td class="w-1/3 text-left py-3 px-4">
                                         <div>
                                             <!-- <label for="blue-sky-781">1pm</label> -->
-                                            <input type="hidden" name="blue-sky" value="1pm">1pm
+                                            <input type="hidden" name="blue-sky-time" value="1pm">1pm
                                             
                                         </div>
                                     </td>
                                     <td class="text-left py-3 px-4">
                                         <div>
                                             <!-- <label for="blue-sky-781">$ 714</label> -->
-                                            <input type="hidden" name="blue-sky" value="714">$ 714
+                                            <input type="hidden" name="blue-sky-value" value="714">$ 714
                                         </div>
                                     </td>                             
                                 </tr>
                                 <tr>
                                     <td class="w-1/3 text-left py-3 px-4">
                                         <div>
-                                            <label><input type="radio" name="blue-sky" id="blue-sky-782" value="Blue_Sky_Air_782">  Blue Sky Air 782</label>
+                                            <label><input type="radio" name="blue-sky" id="blue-sky-782" value="Blue Sky Air 782">  Blue Sky Air 782</label>
                                         </div>
                                     </td>
                                     <td class="w-1/3 text-left py-3 px-4">
                                         <div>
                                             <!-- <label for="blue-sky-782">5pm</label> -->
-                                            <input type="hidden" name="blue-sky" value="5pm">5pm
+                                            <input type="hidden" name="blue-sky-time" value="5pm">5pm
                                         </div>
                                     </td>
                                     <td class="text-left py-3 px-4">
                                         <div>
                                             <!-- <label for="blue-sky-782">$ 758</label> -->
-                                            <input type="hidden" name="blue-sky" value="758">$ 758 
+                                            <input type="hidden" name="blue-sky-value" value="758">$ 758 
                                         </div>
                                     </td>                                   
                                 </tr>
                                 <tr>
                                     <td class="w-1/3 text-left py-3 px-4">
                                         <div>
-                                            <label><input type="radio" name="blue-sky" id="blue-sky-783" value="Blue_Sky_Air_783">  Blue Sky Air 783</label>
+                                            <label><input type="radio" name="blue-sky" id="blue-sky-783" value="Blue Sky Air 783">  Blue Sky Air 783</label>
                                         </div>
                                     </td>
                                     <td class="w-1/3 text-left py-3 px-4">
                                         <div>
                                             <!-- <label for="blue-sky-783">11pm</label> -->
-                                            <input type="hidden" name="blue-sky" value="11pm">11pm
+                                            <input type="hidden" name="blue-sky-time" value="11pm">11pm
                                         </div>
                                     </td>
                                     <td class="text-left py-3 px-4">
                                         <div>
                                             <!-- <label for="blue-sky-783">$ 656</label> -->
-                                            <input type="hidden" name="blue-sky" value="656">$ 656
+                                            <input type="hidden" name="blue-sky-value" value="656">$ 656
                                         </div>
                                     </td>                                   
                                 </tr>                        
@@ -156,19 +156,19 @@ $row = mysqli_fetch_assoc($result)
                                 <tr>
                                     <td class="w-1/3 text-left py-3 px-4">
                                         <div>
-                                            <label><input type="radio" name="blue-sky-sec" id="blue-sky-870" value="Blue_Sky_Air_870">  Blue Sky Air 870</label>
+                                            <label><input type="radio" name="blue-sky-sec" id="blue-sky-870" value="Blue Sky Air 870">  Blue Sky Air 870</label>
                                         </div>
                                     </td>
                                     <td class="w-1/3 text-left py-3 px-4">
                                         <div>
                                             <!-- <label for="blue-sky-870">8am</label> -->
-                                            <input type="hidden" name="blue-sky-sec" value="8am">8am
+                                            <input type="hidden" name="blue-sky-sec-time" value="8am">8am
                                         </div>
                                     </td>
                                     <td class="text-left py-3 px-4">
                                         <div>
                                             <!-- <label for="blue-sky-870">$ 801</label> -->
-                                            <input type="hidden" name="blue-sky-sec" value="801">$ 801
+                                            <input type="hidden" name="blue-sky-sec-value" value="801">$ 801
                                         </div>
                                     </td>
                                   
@@ -176,32 +176,32 @@ $row = mysqli_fetch_assoc($result)
                                 <tr class="bg-gray-100">
                                     <td class="w-1/3 text-left py-3 px-4">
                                         <div>
-                                            <label><input type="radio" name="blue-sky-sec" id="blue-sky-871" value=" Blue_Sky_Air_871">  Blue Sky Air 871</label>
+                                            <label><input type="radio" name="blue-sky-sec" id="blue-sky-871" value=" Blue Sky Air 871">  Blue Sky Air 871</label>
                                         </div>
                                     </td>
                                     <td class="w-1/3 text-left py-3 px-4">
                                         <div>
                                             <!-- <label for="blue-sky-871">1pm</label> -->
-                                            <input type="hidden" name="blue-sky-sec" value="1pm">1pm
+                                            <input type="hidden" name="blue-sky-sec-time" value="1pm">1pm
                                         </div>
                                     </td>
                                     <td class="text-left py-3 px-4">
                                         <div>
                                             <!-- <label for="blue-sky-871">$ 714</label> -->
-                                            <input type="hidden" name="blue-sky-sec" value="714">$ 714
+                                            <input type="hidden" name="blue-sky-sec-value" value="714">$ 714
                                         </div>
                                     </td>                             
                                 </tr>
                                 <tr>
                                     <td class="w-1/3 text-left py-3 px-4">
                                         <div>
-                                            <label><input type="radio" name="blue-sky-sec" id="blue-sky-872" value="Blue_Sky_Air_872">  Blue Sky Air 872</label>
+                                            <label><input type="radio" name="blue-sky-sec" id="blue-sky-872" value="Blue Sky Air 872">  Blue Sky Air 872</label>
                                         </div>
                                     </td>
                                     <td class="w-1/3 text-left py-3 px-4">
                                         <div>
                                             <label for="blue-sky-872">
-                                                <input type="hidden" name="blue-sky-sec" value="5pm">5pm                                                
+                                                <input type="hidden" name="blue-sky-sec-time" value="5pm">5pm                                                
                                             </label>
                                             
                                         </div>
@@ -209,26 +209,26 @@ $row = mysqli_fetch_assoc($result)
                                     <td class="text-left py-3 px-4">
                                         <div>
                                             <!-- <label for="blue-sky-872">$ 758</label> -->
-                                            <input type="hidden" name="blue-sky-sec" value="758">$ 758
+                                            <input type="hidden" name="blue-sky-sec-value" value="758">$ 758
                                         </div>
                                     </td>                                   
                                 </tr>
                                 <tr>
                                     <td class="w-1/3 text-left py-3 px-4">
                                         <div>
-                                            <label><input type="radio" name="blue-sky-sec" id="blue-sky-873" value="Blue_Sky_Air_873">  Blue Sky Air 873</label>
+                                            <label><input type="radio" name="blue-sky-sec" id="blue-sky-873" value="Blue Sky Air 873">  Blue Sky Air 873</label>
                                         </div>
                                     </td>
                                     <td class="w-1/3 text-left py-3 px-4">
                                         <div>
                                             <!-- <label for="blue-sky-873">11pm</label> -->
-                                            <input type="hidden" name="blu-sky-sec" value="11pm">11pm
+                                            <input type="hidden" name="blu-sky-sec-time" value="11pm">11pm
                                         </div>
                                     </td>
                                     <td class="text-left py-3 px-4">
                                         <div>
                                             <!-- <label for="blue-sky-873">$ 656</label> -->
-                                            <input type="hidden" name="blue-sky-sec" value="656">$ 656
+                                            <input type="hidden" name="blue-sky-sec-value" value="656">$ 656
                                         </div>
                                     </td>                                   
                                 </tr>                        
