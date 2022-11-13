@@ -15,6 +15,14 @@ $row = mysqli_fetch_assoc($result);
 $getTime = date_default_timezone_set ('Asia/Singapore');
 
 
+$value1 = $row['departure_value_sec'];
+$value2 = $row['departure_cost'];
+
+$total_cost = $value1 + $value2;
+
+$credit_number_amount = 50000;
+
+$credit_balance = $credit_number_amount - $total_cost;
 
 ?>
 
@@ -48,26 +56,26 @@ $getTime = date_default_timezone_set ('Asia/Singapore');
                     1. A <?php echo $row['type_of_seat'] ?> ticket from <?php echo $row['departure_city'] ?> to 
                     <?php echo $row['arrival_date'] ?>
                 </span>
-                <span class="mr-[25px]">$1602</span>
+                <span class="mr-[25px]">₱ <?php $total_cost ?></span>
             </div>
 
             <div class="ml-[60px] block p-[15px]">
-                <div><i>07/17/2014 : 8am : Flight 780 leaves Seattle for Sydney.</i></div>
-                <div class="mt-[10px]"><i>07/18/2014 : 8am : Flight 870 leaves Sydney for Seattle.</i></div>
+                <div><i><?php echo $row['departure_date'] ?> : <?php echo $row['departure_time'] ?>: <?php echo $row['flightv1'] ?> leaves <?php echo $row['departure_city']?> for <?php echo $row['arrival_city'] ?>.</i></div>
+                <div class="mt-[10px]"><i><?php echo $row['arrival_date'] ?> : <?php echo $row['departure_time_sec'] ?> : <?php echo $row['flightv2'] ?> leaves <?php echo $row['arrival_city'] ?> for <?php echo $row['departure_city']?>.</i></div>
             </div>
 
             <!------>
             <div class="flex justify-between mt-[50px]">
                 <span>*</span><span class="ml-[10px]">Total Cost</span>
-                <span class="bold-text mr-[25px]">$1602</span>
+                <span class="bold-text mr-[25px]">₱ <?php $total_cost ?></span>
             </div>
             <div class="flex justify-between">
-                <span>-</span><span class="ml-[10px]">Total Charged to Credit Card # 1234567890</span>
-                <span class="bold-text mr-[25px]">$1602</span>
+                <span>-</span><span class="ml-[10px]">Total Charged to Credit Card # <?php echo $row['credit_card_number'] ?></span>
+                <span class="bold-text mr-[25px]">₱ <?php  $total_cost ?></span>
             </div>
             <div class="flex justify-between">
                 <span>*</span><span class="ml-[10px]">Credit Account Balance</span>
-                <span class="bold-text mr-[25px]">$0.00</span>
+                <span class="bold-text mr-[25px]">₱ <?php echo number_format($credit_balance) ?></span>
             </div>
         </div>
     </div>
